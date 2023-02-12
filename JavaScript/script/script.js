@@ -1,7 +1,22 @@
-var nome = prompt("Qual é o seu nome?");
-var sobrenome = prompt("Qual é o seu sobrenome?");
+var area  = document.getElementById("area");
 
-console.log("Olá, " + nome + " " + sobrenome);
+function entrar()
+{
+    var nome = prompt("Qual o seu nome?");
 
-document.write("<h1>Bem vindo " + nome + " " + sobrenome + ", ao curso de JavaScript!</h1>");
-document.write("<img src='https://sujeitoprogramador.com/steve.png' alt='Foto do Steve' />");
+    if(nome === null || nome === "")
+    {
+        alert("Algo deu errado!");
+        area.innerHTML = "Você não digitou seu nome!";
+    }
+
+    else
+    {
+        area.innerHTML = "Bem vindo, " + nome + " ";
+
+        let botaoSair = document.createElement("button");
+        botaoSair.innerText = "Sair";
+
+        area.appendChild(botaoSair);
+    }
+}
