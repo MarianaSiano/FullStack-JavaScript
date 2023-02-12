@@ -16,7 +16,14 @@ function entrar()
 
         let botaoSair = document.createElement("button");
         botaoSair.innerText = "Sair";
+        botaoSair.onclick = sair;
 
         area.appendChild(botaoSair);
     }
+}
+
+function sair()
+{
+    alert("Até mais!")
+    area.innerHTML = "Você saiu do sistema!";
 }
