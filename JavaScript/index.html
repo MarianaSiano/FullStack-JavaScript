@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,17 @@
     </head>
 
     <body>
-        <form onsubmit="return calcularIMC(event)">
-            <label for="peso">Peso (kg): </label>
-            <input type="text" name="peso" id="peso" placeholder="Digite seu peso" required> <br><br>
+        <form onsubmit="return calcular(event)">
+            <label>Peso (kg): </label> <br />
+            <input type="text" name="peso" id="peso" placeholder="Exemplo: 65" required /> <br/><br/>
 
-            <label for="altura">Altura (m):</label>
-            <input type="text" name="altura" id="altura" placeholder="Digite sua altura" required> <br><br>
+            <label>Altura (m):</label> <br />
+            <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.90" required /> <br/><br/>
 
-            <input type="submit" value="Calcular">
-
-            <!-- <button type="button" onclick="calcularIMC()">Calcular</button> -->
+            <input type="submit" value="Calcular IMC">
         </form>
+
+        <div id="resultado"></div>
 
         <script src="script/script.js"></script>
     </body>

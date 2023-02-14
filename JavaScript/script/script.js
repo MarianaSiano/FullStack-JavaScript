@@ -9,38 +9,38 @@
 
 //peso / (altura * altura)
 
-function calcularIMC(event)
+var resultado;
+var peso;
+var altura;
+var imc;
+
+function calcular(event)
 {
     event.preventDefault();
 
-    var peso = document.getElementById("peso").value;
-    var altura = document.getElementById("altura").value;
-    var resultado = document.getElementById("resultado");
-    var imc = peso / (altura * altura);
-    var mensagem = "";
+    peso = document.getElementById("peso").value;
+    altura = document.getElementById("altura").value;
+    imc = peso / (altura * altura);
+
+    resultado = document.getElementById("resultado");
 
     if(imc < 17) {
-        mensagem = "Muito abaixo do peso";
-        resultado.innerHTML = mensagem;
+        resultado.innerHTML = 'Seu resultado é: Muito abaixo do peso. <br> Valor de: ' + imc.toFixed(2);
     }
 
     else if(imc >= 17 && imc <= 18.49) {
-        mensagem = "Abaixo do peso";
-        resultado.innerHTML = mensagem;
+        resultado.innerHTML = 'Seu resultado é: Abaixo do peso. <br> Valor de: ' + imc.toFixed(2);
     }
 
     else if(imc >= 18.5 && imc <= 24.99) {
-        mensagem = "Peso normal";
-        resultado.innerHTML = mensagem;
+        resultado.innerHTML = 'Seu resultado é: Peso normal. <br> Valor de: ' + imc.toFixed(2);
     }
 
     else if(imc >= 25 && imc <= 29.99) {
-        mensagem = "Acima do peso";
-        resultado.innerHTML = mensagem;
+        resultado.innerHTML = 'Seu resultado é: Acima do peso. <br> Valor de: ' + imc.toFixed(2);
     }
 
     else {
-        mensagem = "Obesidade";
-        resultado.innerHTML = mensagem;
+        resultado.innerHTML = 'Seu resultado é: Obesidade. <br> Valor de: ' + imc.toFixed(2);
     }
 }
