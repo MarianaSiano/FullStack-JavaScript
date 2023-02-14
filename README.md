@@ -1,5 +1,8 @@
 # JavaScript
 
+Esse repositório tem o objetivo de desenvolver e estudar JavaScript e suas tecnologias, como React.js e Node.js
+<br>
+<br>
 Curso ministrado Matheus Fraga, Full Stack Developer.
 
 # Link do curso
