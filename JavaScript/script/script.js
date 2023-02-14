@@ -25,22 +25,25 @@ function calcular(event)
     resultado = document.getElementById("resultado");
 
     if(imc < 17) {
-        resultado.innerHTML = 'Seu resultado é: Muito abaixo do peso. <br> Valor de: ' + imc.toFixed(2);
+        resultado.innerHTML = "Seu resultado é: Muito abaixo do peso. <br> Valor de: " + imc.toFixed(2);
     }
 
     else if(imc >= 17 && imc <= 18.49) {
-        resultado.innerHTML = 'Seu resultado é: Abaixo do peso. <br> Valor de: ' + imc.toFixed(2);
+        resultado.innerHTML = "Seu resultado é: Abaixo do peso. <br> Valor de: " + imc.toFixed(2);
     }
 
     else if(imc >= 18.5 && imc <= 24.99) {
-        resultado.innerHTML = 'Seu resultado é: Peso normal. <br> Valor de: ' + imc.toFixed(2);
+        resultado.innerHTML = "Seu resultado é: Peso normal. <br> Valor de: " + imc.toFixed(2);
     }
 
     else if(imc >= 25 && imc <= 29.99) {
-        resultado.innerHTML = 'Seu resultado é: Acima do peso. <br> Valor de: ' + imc.toFixed(2);
+        resultado.innerHTML = "Seu resultado é: Acima do peso. <br> Valor de: " + imc.toFixed(2);
     }
 
     else {
-        resultado.innerHTML = 'Seu resultado é: Obesidade. <br> Valor de: ' + imc.toFixed(2);
+        resultado.innerHTML = "Seu resultado é: Obesidade. <br> Valor de: " + imc.toFixed(2);
     }
+
+    document.getElementById("peso").value = "";
+    document.getElementById("altura").value = "";
 }
