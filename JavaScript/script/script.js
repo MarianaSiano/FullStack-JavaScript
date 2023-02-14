@@ -2,7 +2,8 @@
 
 function pedir()
 {
-    var valor = prompt("Digite um valor entre 1 e 4");
+    //var valor = prompt("Digite um valor entre 1 e 4");
+    var nome = prompt("Digite seu nome");
 
     /*
     switch(Number(valor)){
@@ -26,4 +27,23 @@ function pedir()
             alert("Valor inválido! Tente novamente!");
     }
     */
+
+    switch(nome)
+    {
+        case 'Matheus':
+            alert("Olá Matheus");
+            break;
+        
+        case 'João':
+            alert("Olá João");
+            break;
+        
+        case 'Maria':
+            alert("Olá Maria");
+            break;
+        
+        default:
+            alert("Olá desconhecido");
+            break;
+    }
 }
