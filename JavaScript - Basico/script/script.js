@@ -14,7 +14,7 @@ var peso;
 var altura;
 var imc;
 
-function calcularIMC(event)
+function calcular(event)
 {
     event.preventDefault();
 

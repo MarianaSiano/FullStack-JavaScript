@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Classes */
+.home {
+    background-color: #F0F8FF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ids */
+#resultado {
+    color: #4B0082;
+    display: flex;
+    padding-top: 1rem;
+    margin: center;
+}
+
+/* Tags */
+form {
+    padding-right: 5rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 10rem;
+    color: #008080;
+}
+
+label {
+    color: 	#4B0082;
+    font-size: 1rem;
+}
+
+input {
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    background-color: #F0FFFF;
+}
+
+button {
+    background-color: #008080;
+    color: #F0F8FF;
+    font-size: 0.8rem;
+    font-weight: 350;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
