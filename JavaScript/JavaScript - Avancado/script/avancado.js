@@ -1,34 +1,13 @@
-//Spread Operator
+//Rest Operator
 
-// let primeiros = [1, 2, 3];
-// let numeros = [...primeiros, 4, 5, 10];
-
-// console.log(numeros);
-
-// let pessoa = {
-//     nome: 'João',
-//     idade: 20,
-//     cargo: 'Desenvolvedor',
-// };
-
-// let novaPessoa = {
-//     ...pessoa,
-//     status: 'Ativo',
-//     cisdade: 'São Paulo/SP',
-// };
-
-// console.log(novaPessoa);
-
-function novoUsuario(info)
+function convidados(...nomes)
 {
-    let dados = {
-        ...info,
-        status: 'Ativo',
-        inicio: "01/01/2020",
-        codigo: '123456'
-    };
+    console.log("Seja bem vindos!! Todos Convidados");
+    console.log(...nomes);
 
-    console.log(dados);
+    document.write("Seja bem vindos!! Todos Convidados");
+    document.write("<br>");
+    document.write(...nomes + "<br>");
 }
 
-novoUsuario({Nome: 'João', Idade: 20, Cargo: 'Desenvolvedor'})
+convidados("João", "Maria", "José", "Pedro", "Ana", "Paulo");
