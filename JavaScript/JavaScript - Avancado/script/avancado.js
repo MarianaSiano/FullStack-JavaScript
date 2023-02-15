@@ -1,10 +1,10 @@
-//Template string
-let nome = 'João';
-let sobrenome = 'Silva';
-let idade = 30;
+let pessoa = {
+    nome: 'João',
+    sobrenome: 'da Silva',
+    empresa: 'Google',
+    cargo: 'Analista de Sistemas',
+};
 
-//let mensagem = "Olá, " + nome + " " + sobrenome + ", você tem " + idade + " anos.
+// let nome = "Maria";
 
-let mensagem = `Olá, ${nome} ${sobrenome}, você tem ${idade} anos.`;
-
-document.write(mensagem);
+// const {nome:nomePessoa, cargo, empresa, sobrenome} = pessoa;
