@@ -1,15 +1,20 @@
-//setInterval
-function acao(){
-    document.write("Executando... <br>");
-}
+//Objetos
 
-/*var time = setInterval(() => {
-    document.write("Executando... <br>");
-}, 1000);*/
+/*let pessoa = {
+    nome: 'João',
+    idade: 20,
+    altura: 1.80,
+    cargo: 'Programador Back-end',
+};
 
-//setTimeout
-//setTimeout(acao, 3000);
+let carro = {
+    nome: 'Fusca',
+    cor: 'Azul',
+    potencia: 1.0,
+};*/
 
-setTimeout(() => {
-    document.write("Executando... <br>");
-}, 3000);
+let usuarios = [
+    {nome: 'Maria', cargo: 'Programador Back-end', status: 'Ativo'},
+    {nome: 'João', cargo: 'Programador Front-end', status: 'Inativo'},
+    {nome: 'Pedro', cargo: 'Programador Full-stack', status: 'Ativo'},
+];
