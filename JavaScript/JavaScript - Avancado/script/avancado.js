@@ -21,10 +21,10 @@ function sorteador(...numeros)
     document.write("<br>");
     document.write(...numeros + "<br>");
 
-    const numeroGerado = Math.random() * numeros.length;
-    console.log(numeroGerado);
+    const numeroGerado = Math.floor(Math.random() * numeros.length);
+    console.log(numeros[numeroGerado]);
 
-    document.write("Número sorteado: " + numeroGerado);
+    document.write("Número sorteado: " + numeros[numeroGerado]);
 }
 
 sorteador(39, 20, 98, 46, 35, 42, 15, 53);
