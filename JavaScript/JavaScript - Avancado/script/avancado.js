@@ -16,3 +16,5 @@ let novaPessoa = {
     status: 'Ativo',
     cisdade: 'São Paulo/SP',
 };
+
+console.log(novaPessoa);
