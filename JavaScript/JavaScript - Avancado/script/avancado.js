@@ -1,23 +1,18 @@
+//Spread Operator
+
+// let primeiros = [1, 2, 3];
+// let numeros = [...primeiros, 4, 5, 10];
+
+// console.log(numeros);
+
 let pessoa = {
     nome: 'João',
-    sobrenome: 'da Silva',
-    empresa: 'Google',
-    cargo: 'Analista de Sistemas',
+    idade: 20,
+    cargo: 'Desenvolvedor',
 };
 
-// let nome = "Maria";
-
-// const {nome:nomePessoa, cargo, empresa, sobrenome} = pessoa;
-
-//==========================================================
-
-//Desconstruir um array
-let nomes = ["João", "Maria", "José"];
-
-// let { 0:joão} = nomes
-// document.write(joão);
-
-let [primeironome, segundonome] = nomes;
-document.write(primeironome);
-document.write(", ");
-document.write(segundonome);
+let novaPessoa = {
+    ...pessoa,
+    status: 'Ativo',
+    cisdade: 'São Paulo/SP',
+};
