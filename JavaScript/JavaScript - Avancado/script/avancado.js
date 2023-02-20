@@ -10,7 +10,7 @@
 //Reduce = reduzir um array
 let numeros = [25, 20, 21];
 
-let total = numeros.reduce((acumulador, numero, indice, original) => {
+let total = numeros.reduce((acumulador, numero, indice) => {
     console.log(`Indice: ${indice} - Numero: ${numero} - Acumulador: ${acumulador}`);
     return acumulador + numero;
 }, 0);
