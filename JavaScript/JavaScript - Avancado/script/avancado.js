@@ -1,25 +1,8 @@
-//Find = Buscar alguma coisa
-// let listagem = [5, 9, "Maria Alice", 14, "Ana Carolina"];
+//Funções Anônimas
 
-// let busca = listagem.find((item) => {
-//     if(item === "Maria Alice"){
-//         return item;
-//     }
+let subtrair = (valor1, valor2) => {
+    let total = valor1 - valor2;
+    document.write("Total da suntracao: " + total);
+}
 
-//     else{
-//         return "Não encontrado";
-//     }
-// })
-
-// document.write("O resultado da busca foi: " + busca);
-
-//Filter = Filtrar alguma coisa
-let palavras = ["Ana Vitória", "Maria", "Augusto", "Enzo Gabriel", "Luiz Miguel"];
-
-let resultado = palavras.filter((item) => {
-    if(item.length >= 5){
-        return item;
-    }
-})
-
-document.write("O resultado da busca foi: " + resultado);
+subtrair(35, 14);
