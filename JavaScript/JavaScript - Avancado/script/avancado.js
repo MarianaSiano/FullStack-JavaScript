@@ -16,10 +16,10 @@
 //Filter = Filtrar alguma coisa
 let palavras = ["Ana Vitória", "Maria", "Augusto", "Enzo Gabriel", "Luiz Miguel"];
 
-let resutado = palavras.filter((item) => {
-    if(item.length <= 5){
+let resultado = palavras.filter((item) => {
+    if(item.length >= 5){
         return item;
     }
 })
 
-document.write("O resultado da busca foi: " + resutado);
+document.write("O resultado da busca foi: " + resultado);
