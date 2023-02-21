@@ -14,3 +14,10 @@ if(nomes.includes("Lavínia")){
 else {
     document.write("Lavínia não está na lista de nomes" + "<br>")
 }
+
+document.write("<br>")
+
+let nome = "Felipe"
+
+document.write(nome.startsWith("Fel") + "<br>")
+document.write(nome.endsWith("ipe") + "<br>")
