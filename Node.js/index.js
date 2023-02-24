@@ -15,6 +15,14 @@ server.use((req, res, next) => {
     return next(); //Para continuar a execução
 })
 
+function checkCurso(req, res, next) {
+    if(!req.body.nome) {
+        return res.status(400).json({ error: "Nome do curso é obrigatório" })
+    }
+
+    return next();
+}
+
 server.get('/cursos', (req, res) => {
     return res.json(cursos);
 })
@@ -26,14 +34,14 @@ server.get('/cursos/:index', (req, res) => {
 })
 
 //Criando um novo curso
-server.post('/cursos', (req, res) => {
+server.post('/cursos', checkCurso, (req, res) => {
     const { nome } = req.body;
     cursos.push(nome);
     return res.json(cursos);
 })
 
 //Atualizando um curso
-server.put('/cursos/:index', (req, res) => {
+server.put('/cursos/:index', checkCurso, (req, res) => {
     const { index } = req.params;
     const { nome } = req.body;
     cursos[index] = nome;
