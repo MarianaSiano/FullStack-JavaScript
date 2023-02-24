@@ -9,6 +9,12 @@ server.use(express.json()) //Para o express entender o formato JSON
 
 const cursos = ['Node.js', 'React', 'React Native'];
 
+//Middleware global
+server.use((req, res, next) => {
+    console.log(`URL CHAMADA: ${req.url}`)
+    return next(); //Para continuar a execução
+})
+
 server.get('/cursos', (req, res) => {
     return res.json(cursos);
 })
