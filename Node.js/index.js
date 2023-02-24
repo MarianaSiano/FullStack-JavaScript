@@ -6,9 +6,9 @@ const server = express()
 //Request body = { nome: "Node.js", tipo: "Back-end"}
 
 //localhost:3000/curso
-server.get('/curso', (req, res) => {
-    const nome = req.query.nome;
-    return res.json({ curso: `Aprendendo ${nome}` });
+server.get('/curso/:id', (req, res) => {
+    const id = req.params.id;
+    return res.json({ curso: `Id do curso: ${id}` });
 })
 
 server.listen(3000)
