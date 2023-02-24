@@ -1,5 +1,6 @@
 const express = require('express')
 const server = express()
+server.use(express.json()) //Para o express entender o formato JSON
 
 //Query params = ?nome=Node.js
 //Route params = /users/1
@@ -16,6 +17,12 @@ server.get('/cursos', (req, res) => {
 server.get('/cursos/:index', (req, res) => {
     const { index } = req.params;
     return res.json(cursos[index]);
+})
+
+server.post('/cursos', (req, res) => {
+    const { nome } = req.body;
+    cursos.push(nome);
+    return res.json(cursos);
 })
 
 server.listen(3000)
