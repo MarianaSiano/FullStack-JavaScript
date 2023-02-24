@@ -4,6 +4,7 @@ const server = express()
 //Query params = ?nome=Node.js
 //Route params = /users/1
 //Request body = { nome: "Node.js", tipo: "Back-end"}
+//CRUD - Create, Read, Update, Delete
 
 const cursos = ['Node.js', 'React', 'React Native'];
 
